@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .外部盒子 {
+            margin: 0 auto;
+            text-align: left;
+        }
+        .背景 {
+            height: 251px;
+            width: 1520px;
+            background-image: url(图1.png);
+        }
+        .长大logo{
+            height:251px;
+            width:414px;
+            z-index:0;
+        }
+        .文字 {
+            position: absolute;
+            left:580px;
+            top:50px;
+            color:aliceblue;
+            font-size:90px;
+
+        }
+        .标题{
+            font-size:50px;
+        }
+        .图片1{
+            position:absolute;
+            left:1050px;
+            top:9px;
+            height:251px;
+            width:414px;
+            z-index:-1;
+        }
+        .导航栏 {
+            width: 1520px;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            background-color: #006986;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        a {
+            float: left;
+            width: 11.43em;
+            text-decoration: none;
+            color: white;
+            background-color: #006986;
+            padding: 1.4em 1em;
+            border-right: 1px solid white;
+        }
+
+            a:hover {
+                background-color:deepskyblue;
+            }
+
+        li {
+            display: inline
+        }
+        .内容上{
+            float:left;
+        }
+        .盒1
+        {
+            width:600px;
+            float:left
+        }
+        .页眉1 {
+            height: 36px;
+            width: 600px;
+            float: left;
+        }
+        .通告1 {
+            font-size: 20px;
+            color: black;
+        }
+        .通知1 {
+            font-size: 30px;
+            color: darkturquoise;
+        }
+        .more1 {
+            float:right;
+            text-align: right;
+            font-size: 20px;
+            color: darkturquoise;
+        }
+        .内容1 {
+            height: 48.8px;
+        }
+        .内容a {
+            height:48.8px;
+            font-size: 25px;
+            padding: 0px 450px 0px 0px;
+        }
+        .内容b {
+            height: 48.8px;
+            font-size: 20px;
+            color: aqua;
+        }
+        hr
+        {
+            background:#0384a8;
+            border:none;
+            height:3px;
+        }
+        .盒2 {
+            width: 900px;
+            float:right;
+        }
+        .页眉2
+        {
+            float:left;
+            height:36px;
+            width:900px;
+        }
+        .通告2 {
+            font-size: 20px;
+            color: black;
+        }
+
+        .通知2 {
+            font-size: 30px;
+            color: darkturquoise;
+        }
+
+        .more2 {
+            float: right;
+            text-align: right;
+            font-size: 20px;
+            color: darkturquoise;
+        }
+        .内容p{
+            width:900px;
+        }
+        .内容2 {
+            float:left;
+            border-width: 5px;
+            width:400px;
+        }
+        .内容3 {
+            float: right;
+            width: 400px;
+        }
+        h1{
+            font-size:20px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .内容c {
+            height: 48.8px;
+            font-size: 25px;
+            padding: 0px 250px 0px 0px;
+        }
+        .页眉3 {
+            float: left;
+            height: 36px;
+            width: 630px;
+        }
+        .内容d {
+            height: 48.8px;
+            font-size: 25px;
+            padding: 0px 500px 0px 0px;
+        }
+        .内容下{
+            width:1500px;
+        }
+        .盒3{
+            float:left;
+            width:650px;
+        }
+        .盒4 {
+            float: left;
+            width: 650px;
+        }
+        .页脚 
+        {
+            float: left;
+            background-color: #0384a8;
+            color: aliceblue;
+            width: 1500px;
+            text-align: center
+        }
+        .链接 {
+            font-size: 40px;
+            color: cornflowerblue;
+        }
+        .内容6 {
+            border-color: black;
+            border-width: 5px 5px 5px 5px;
+        }
+        <!--不知道为什么没有边框-->
+     <!--   hr {
+            background: #0384a8;
+            border: none;
+            height: 3px;
+            position: absolute;
+            left: 0px;
+            top:270px;
+        }-->
+    </style>
+</head>
+
+
+<body>
+    <div id="main">
+    <div class="外部盒子">
+        <div class="背景">
+            <div class="长大logo">
+                <img src="logo.png" />
+            </div>
+            <div class="文字">
+                <p class="标题">
+                    运维组--鄢澳勇
+                </p>
+            </div>
+            <div class="图片1">
+                <img src="图2.png" />
+            </div>
+        </div>
+        <div class="导航栏">
+            <ul>
+                <li><a href="http://www.yangtzeu.edu.cn/">官网首页</a></li>
+                <li><a href="http://www.yangtzeu.edu.cn/">组织机构</a></li>
+                <li><a href="http://www.yangtzeu.edu.cn/">最新动态</a></li>
+                <li><a href="http://www.yangtzeu.edu.cn/">通知公告</a></li>
+                <li><a href="http://www.yangtzeu.edu.cn/">学习资料</a></li>
+                <li><a href="http://www.yangtzeu.edu.cn/">资料下载</a></li>
+                <li><a href="http://www.yangtzeu.edu.cn/">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="内容上">
+        <div class="盒1">
+            <div class="页眉1">
+                <img src="图3.png" />
+                <span class="通知1">通知</span>
+                <span class="通告1">通告</span>
+                <span class="more1">MORE+</span>
+            </div>
+            <hr/>
+            <div >
+                <ul style="list-style:circle">
+                    <li>
+                        <div class="内容1">
+                            <span class="内容a">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容a">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容a">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容a">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容a">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容a">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="盒2">
+            <div class="页眉2">
+                <img src="图3.png" />
+                <span class="通知2">专题</span>
+                <span class="通告2">要闻</span>
+                <span class="more2">MORE+</span>
+            </div>
+            <div class="内容p">
+                <div class="内容2">
+                    <img src="图4.png" />
+                    <p>程伯基教授在在临床专业动员会上作报告</p>
+                </div>
+                <div class="内容3">
+                    <h1>基础医学院召开临床医学专业本科</h1>
+                    <p>4月二十八号上午，临床医学院的全体教职工在医学部国际学术报告厅召开了临床医学专业本科工作</p>
+                    <ul>
+                        <li>
+                            <div class="内容1">
+                                <span class="内容c">标题</span>
+                                <span class="内容b">01-22</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="内容1">
+                                <span class="内容c">标题</span>
+                                <span class="内容b">01-22</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="内容1">
+                                <span class="内容c">标题</span>
+                                <span class="内容b">01-22</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+        <div class="内容下">
+            <div class="盒3">
+                <div class="页眉3">
+                    <img src="图3.png" />
+                    <span class="通知1">学习</span>
+                    <span class="通告1">资料</span>
+                    <span class="more1">MORE+</span>
+                </div>
+                <ul>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="盒4">
+                <div class="页眉3">
+                    <img src="图3.png" />
+                    <span class="通知1">学习</span>
+                    <span class="通告1">资料</span>
+                    <span class="more1">MORE+</span>
+                </div>
+                <ul>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="内容1">
+                            <span class="内容d">标题</span>
+                            <span class="内容b">01-22</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="内容6">
+                <div class="页眉4">
+                    <span class="链接">站内链接</span>
+                </div>
+            </div>
+        </div>
+        <div class="页脚">
+            邮编：123456
+            <br/>
+            电话号码：123456
+            <br/>
+            技术支持：长大在线
+            <br/>
+            地址：长江大学
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<SCRIPT LANGUAGE=javascript>
+    document.body.style.backgroundColor = "red";//改变背景色
+</SCRIPT>
