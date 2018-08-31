@@ -1,0 +1,10 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<form class="info_form" action="/info" method="POST" >
+<div class="line" ><div class="key" >学号：</div> <input type="text" name="username" id="username"></div>
+<div class="line" ><div class="key" >密码：</div> <input type="password" name="password" id="password"></div>
+<p>如果想第一时间获取成绩请填邮箱订阅</p>
+<div class="line" ><div class="key" >(选填)邮箱</div> <input type="password" name="password" id="password"></div>
+<div class="center"><input type="submit" value="登录" > </div>
+</form>
+{% endblock %}
