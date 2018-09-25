@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>青春长大</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <link href="css/master.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-offset-8 col-sm-4">
+                    <div class="input-group hidden-xs hidden-sm" id="input-group-text">
+                        <input type="text" class="form-control" placeholder="搜索关键字">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><img src="images/search.jpg"></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--主体-->
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- 导航 -->
+                <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand"></div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav text-center">
+                            <li><a href="#" id="header">本站首页</a></li>
+                            <li class="mainlevel">
+                                <div class="dropdown">
+                                    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+                                        data-hover="dropdown">
+                                        <a href="http://xywh.yangtzeu.edu.cn/zzjg.htm" title="组织机构">组织机构</a>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="团委介绍"> 团委介绍</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="组织机构"> 组织机构</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="学生组织"> 学生组织</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="学生社团">学生社团</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainlevel">
+                                <div class="dropdown">
+                                    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+                                        data-hover="dropdown">
+                                        <a href="#" title="团务资料">团务资料</a>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="团务知识"> 团务知识</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="团发文件"> 团发文件</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="工作制度"> 工作制度</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainlevel">
+                                <div class="dropdown">
+                                    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+                                        data-hover="dropdown">
+                                        <a href="#" title="品牌创意">品牌创意</a>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="思想引领"> 思想引领</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="创新创业"> 创新创业</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="文化活动"> 文化活动</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="实践育人"> 实践育人</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="组织建设"> 组织建设</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mainlevel">
+                                <div class="dropdown">
+                                    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+                                        data-hover="dropdown">
+                                        <a href="#" title="青年之家">青年之家</a>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="场地预约"> 场地预约</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="物质调用"> 物质调用</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="第二课堂"> 第二课堂</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a role="menuitem" tabindex="-1" href="#" title="权益维护"> 权益维护</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <!--轮播 大-->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/1.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/2.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/3.png" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/4.png" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!--新闻-->
+            <div class="news row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="title">
+                        <h3>
+                            新闻&nbsp&nbsp&nbspNews
+                        </h3>
+                        <span>
+                            <a href="#">more</a>
+                        </span>
+                    </div>
+                    <div class="title_line"></div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-5" id="col-md-5news">
+                    <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/2.jpg" alt="纪念九一八事变87周年倡议书" height="450" width="265">
+                                <div class="carousel-caption">
+                                    <p>纪念"九一八"事变87周年倡议书</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/5.jpg" alt="长江大学学生会第34个教师节祝词" height="450" width="265">
+                                <div class="carousel-caption">
+                                    <p>长江大学学生会第34个教师节祝词</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/6.jpg" alt="校团委召开2018迎新志愿者培训动员会" height="450" width="265">
+                                <div class="carousel-caption" id="carousel-caption">
+                                    <p>校团委召开2018迎新志愿者培训动员会</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3" id="col-md-2news">
+                    <ul>
+                        <li>
+                            <div class="col-md-7">
+                                <a hret="#"><img src="images/7.jpg" title="纪念九一八事变87周年倡议书" class="hidden-xs hidden-sm"></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-5">
+                                <a href="#" title="纪念九一八事变87周年倡议书">
+                                    <p>纪念"九一八"事变87周年倡议书</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-7">
+                                <a href="#"><img src="images/8.jpg" title="长江大学学生会第34个教师节祝词" class="hidden-xs hidden-sm"></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-5">
+                                <a href="#" title="长江大学学生会第34个教师节祝词">
+                                    <p>长江大学学生会第34个教师节祝词</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-7">
+                                <a href="#"><img src="images/9.jpg" title="团委召开2018新学期迎新志愿者培训大会" class="hidden-xs hidden-sm"></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-5">
+                                <a href="#" title="团委召开2018新学期迎新志愿者培训大会">
+                                    <p>团委召开2018新学期迎新志愿者培训大会</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="col-xs-12 col-sm-12 col-md-4" id="col-md-5news2">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank" title="纪念“九·一八”事变87周年倡议书" style="font-weight:bold;">纪念“九·一八”事变87周年倡议书</a>
+                            <span>09-17</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="长江大学学生会第34个教师节祝词">长江大学学生会第34个教师节祝词</a>
+                            <span>09-10</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="校团委召开2018年新学期迎新志愿者培训大会">校团委召开2018年新学期迎新志愿者...</a>
+                            <span>09-04</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="新时代“取火记”：我校师生赴延安开展青年大学习活动">新时代"取火记":我校师生赴延安开展..</a>
+                            <span>08-29</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="我校文艺扶贫小分队走进水月寺镇">我校文艺扶贫小分队走进水月寺镇</a>
+                            <span>08-29</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="校团委书记关辉带队赴红安参加暑期三下乡社会实践">校团委书记带队赴红安参加暑期下...</a>
+                            <span>07-21</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="校党委书记朱业宏一行慰问”阳光号列车“赴兴山支教队">校党委书记一行慰问"阳光号列车"赴...</a>
+                            <span>07-19</span>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="校团委召开第五次共青团工作例会集体学习团队十八大精神">校团委召开第五次共青团工作例会...</a>
+                            <span>07-12</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row">
+                <!--通知-->
+                <div class="notices col-xs-12 col-md-4">
+
+                    <div class="title">
+                        <h3>
+                            通知&nbsp&nbsp&nbspNotices
+                        </h3>
+                        <span>
+                            <a href="#">more</a>
+                        </span>
+                    </div>
+                    <div class="title_line"></div>
+                    <div class="row_list">
+                        <dl>
+                            <dt class="col-xs-3">
+                                <strong>18</strong>
+                                <span>2018-09</span>
+                            </dt>
+                            <dd class="col-xs-9">
+                                <a herf="#" title="关于举办“屈原杯”一二·九 诗歌朗诵大赛的通知">关于举办“屈原杯”一二·九 诗歌朗诵大赛的通知</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="col-xs-3">
+                                <strong>18</strong>
+                                <span>2018-09</span>
+                            </dt>
+                            <dd class="col-xs-9">
+                                <a herf="#" title="关于举办“奋进新时代 青年创未来”长江大学纪念改革开放40周年金秋歌会暨“长江金秋”科技文化节开幕式的通知">关于举办“奋进新时代
+                                    青年创未来”长江大学纪念改革开放40周...</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="col-xs-3">
+                                <strong>18</strong>
+                                <span>2018-09</span>
+                            </dt>
+                            <dd class="col-xs-9">
+                                <a herf="#" title="关于开展长江大学2018年“长大杯”大学生 创业大赛项目申报工作的通知">关于开展长江大学2018年“长大杯”大学生
+                                    创业大赛项目申报工...</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="col-xs-3">
+                                <strong>18</strong>
+                                <span>2018-09</span>
+                            </dt>
+                            <dd class="col-xs-9">
+                                <a herf="#" title="关于开展2018年“长新杯”大学生课外学术科技作品竞赛的通知">关于开展2018年“长新杯”大学生课外学术科技作品竞赛的通知</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt class="col-xs-3">
+                                <strong>18</strong>
+                                <span>2018-09</span>
+                            </dt>
+                            <dd class="col-xs-9">
+                                <a herf="#" title="关于开展2018年长江大学暑期“三下乡” 社会实践活动总结表彰工作的通知">关于开展2018年长江大学暑期“三下乡”
+                                    社会实践活动总结表彰...</a>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </div>
+                <!--一线风采-->
+                <div class="basic col-xs-12 col-md-4" id="Basic-col-md-4">
+
+                    <div class="title">
+                        <h3>
+                            一线风采&nbsp&nbsp&nbspBasic
+                        </h3>
+                        <span>
+                            <a href="#">more</a>
+                        </span>
+                    </div>
+                    <div class="title_line"></div>
+                    <ul>
+                        <li>
+                            <h4><a href="#" title="城建学院学生在第六届湖北省大学生结构设计竞赛中获佳绩">城建学院在第六届湖北省大学生结构...</a></h4>
+                            <p>（通讯员 芮瑶）近期，第六届湖北省大学生...<span>09-08</span></p>
+                        </li>
+                        <li>
+                            <h4><a href="#" title="城建学院师生参加新学期首次升旗仪式">城建学院师生参加新学期首次升旗仪式</a></h4>
+                            <p>（通讯员 杨晨帆）9月3日上午，由城建学院...<span>09-03</span></p>
+                        </li>
+                        <li>
+                            <h4><a href="#" title="电信学院青支队圆满完成暑期赴监利荷花小学心连心支教活动">电信学院青支队圆满完成暑假赴监利...</a></h4>
+                            <p>（通讯员康玮 张赛田）近日，历经半个月...<span>08-21</span></p>
+                        </li>
+                        <li>
+                            <h4><a href="#" title="农学院植卓产31501团支部赴韶山开展暑期社会实践活动">农学院植产卓1501团支部赴韶山开展...</a></h4>
+                            <p>（通讯员 范如旖）瞻仰红色圣地感悟革命情...<span>08-02</span></p>
+                        </li>
+                        <li>
+                            <h4><a href="#" title="电信学院学子参加洪湖红色之旅:重温革命历史 传承红色基因">电信学院学子参加洪湖红色之旅:重温...</a></h4>
+                            <p>（通讯员 姜宏屏）“重温历史，牢记使命。...<span>08-01</span></p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--人物-->
+                <div class="character col-xs-12 col-md-4" id="Story-col-md-4">
+
+                    <div class="title">
+                        <h3>
+                            长大故事&nbsp&nbsp&nbspStory
+                        </h3>
+                        <span>
+                            <a href="#">more</a>
+                        </span>
+                    </div>
+                    <div class="title_line"></div>
+                    <dl>
+                        <dt><img src="images/story1.jpg"></dt>
+                        <dd><a href="#" title="长大学干之星胡蝶：青春须早为，岂能长少年">长大学干之星胡蝶：青春须早为，岂能长少年</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/story2.jpg"></dt>
+                        <dd><a href="#" title="长大学习之星谢维：爱我所爱，百折不回">长大学习之星谢维：爱我所爱，百折不回</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/story3.jpg"></dt>
+                        <dd><a href="#" title="长大科研之星谢泽辉：机会总是给有准备的人">长大科研之星谢泽辉：机会总是给有准备的人</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/story4.jpg"></dt>
+                        <dd><a href="#" title="长大口才之星邓楠：让梦想在舞台生根发芽">长大口才之星邓楠：让梦想在舞台生根发芽</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/story5.jpg"></dt>
+                        <dd><a href="#" title="长大自强之星李晓鹏：以自强做笔，描绘青春的色彩">长大自强之星李晓鹏：以自强做笔，描绘青春的色彩</a></dd>
+                    </dl>
+
+                </div>
+            </div>
+            <!--专题-->
+            <div class="row" id="specials-row">
+                <div class="title">
+                    <h3>
+                        专题&nbsp&nbsp&nbspSpecials
+                    </h3>
+                    <span>
+                        <a href="#">more</a>
+                    </span>
+                </div>
+                <div class="title_line"></div>
+                <div class="thumbnail col-xs-6 col-sm-3" id="thumbnail">
+                    <a href="#" title="学习十九大精神专题网">
+                        <img src="images/specials1.jpg">
+                        <div class="caption">
+                            <p>学习十九大精神专题网</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail col-xs-6 col-sm-3" id="thumbnail">
+                    <a href="#" title="中国共产党长江大学第二次代表大会">
+                        <img src="images/specials2.jpg">
+                        <div class="caption">
+                            <p>中国共产党长江大学第二次代表大会</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail col-xs-6 col-sm-3" id="thumbnail">
+                    <a href="#" title="长江大学党员在线学习平台">
+                        <img src="images/specials3.jpg">
+                        <div class="caption">
+                            <p>长江大学党员在线学习平台</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="thumbnail col-xs-6 col-sm-3" id="thumbnail">
+                    <a href="#" title="心理健康教育中心">
+                        <img src="images/specials4.jpg">
+                        <div class="caption">
+                            <p>心理健康教育中心</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="footer">
+        <!--友情链接-->
+        <div class="friendLink">
+            <ul>
+                <li><a href="#">长江大学主页</a></li>
+                <li class="line"></li>
+                <li><a href="#">共青团中央</a></li>
+                <li class="line"></li>
+                <li><a href="#">中国青年网</a></li>
+                <li class="line"></li>
+                <li><a href="#">湖北共青团</a></li>
+                <li class="line"></li>
+                <li><a href="#">湖北教育厅</a></li>
+                <li class="line"></li>
+                <li><a href="#">荆州共青团</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
